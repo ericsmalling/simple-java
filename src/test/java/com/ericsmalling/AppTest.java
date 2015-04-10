@@ -33,6 +33,11 @@ public class AppTest
      */
     public void testApp()
     {
-        assertEquals("Hello world!", new App("world").greeting());
+        assertEquals("Hello Junit!", new App("Junit").greeting());
+    }
+    
+    public void testNoName()
+    {
+        assertEquals("Hello Somebody!", new App().greeting());
     }
 }

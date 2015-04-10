@@ -12,12 +12,16 @@ public class App
         this.name = name;
     }
 
+    public App() {
+        this("Somebody");
+    }
+
     public static void main( String[] args )
     {
-        System.out.println( new App("somebody").greeting() );
+        System.out.println( new App().greeting() );
     }
     
     public String greeting(){
-        return "Hello world!";
+        return "Hello "+name+"!";
     }
 }
